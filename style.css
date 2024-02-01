@@ -87,7 +87,117 @@
     color: #a45a49;
   }
 
-  /* ______________________________________________________________________________ */
+  /* __________________________________________________________________*/
+  /* Sessão Principal */
+  main{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container{
+    background: #181012;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease;
+  }
+
+  .container.slide-from-right {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .info{
+    max-width: 1120px;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 6rem;
+    align-items: center;
+    padding: 0rem 2rem;
+    margin: auto;
+    overflow: clip;
+  }
+
+  /* Destaque */
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .news {
+    font-family: 'Epilogue', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  /* Usado na palavra (Novidades) no main */
+  .marrom {
+    color: #a45a49;
+  }
+
+  /* Usado na palavra (Em alta) em receitas */
+  .amarelo {
+    color: #e7a80e;
+  }
+
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 56px;
+    font-weight: 800;
+    color-interpolation-filters: #FFF;
+  }
+
+  hr {
+    border-color: #a45a49;
+  }
+
+  .subtitle {
+    color: #c7bab3;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding-bottom: 20px;
+  }
+
+  .images {
+    max-width: 45%;
+    column-count: 4;
+    column-gap: 1rem;
+    margin: -1rem;
+  }
+
+  .images > figure > img {
+    width: 100px;
+    border-radius: 0.5rem;
+  }
+  /* __________________________________________________________________*/
+  /* Botão */
+  .button {
+    width: 100%;
+    max-width: 1120px;
+    padding: 1rem;
+    margin: auto;
+    transform: translateY(-50%);
+  }
+
+  button {
+    border: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background: #a45a49;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background: #783f37;
+  }
+
+  
+  /* __________________________________________________________________*/
   /* Responsividade (Telas menores que 768px) */
 
   @media screen and  (max-width: 768px) {
